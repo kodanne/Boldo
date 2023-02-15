@@ -3,25 +3,34 @@ header, footer{
     display: flex;
     justify-content: space-between;
 }
-.div{ 
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+.div, .div2{ 
     display: flex;
     justify-content: space-between;
 }
 .d4{
-    width: 50%;
-    margin: auto;
+    text-align: center;
+}
+.d3{
+    text-align: center;
 }
  h4,h1{
     text-align: center;
-    font-weight: 100;
-    
+    font-weight: 100; 
+}
+h1, h2{
+    font-size: 40px;
 }
 .img{
-    width: 30%;
+    width: 40%;
 }
 
 .p1{
     opacity: 0.5;
+   
    
 }
 span{
@@ -34,38 +43,41 @@ span{
     flex-direction: column;
     gap: 10px;
     justify-content: space-between;
+    opacity: 0.8;
 }
 .h1{
     border: 2px solid blue;
     border-radius: 50px;
     padding: 10px;
     text-decoration: none;
+    
 }
-h1, h2{
-    font-size: 55px;
-} 
+
 .h2{
-    position: relative;
-    left: 400px;
+    width: 50%;
+    margin: auto;
     border: 2px solid #0a2640;
     border-radius: 50px;
     padding: 10px;
     text-decoration: none;
-    
+    color: #0a2640;
+    text-align: center;
 }
 a{
     text-decoration: none;
+    color: #0a2640;
+    padding: 10px 10px;
 }
 .p2{
-    font-size: 40px;
+    font-size: 30px;
+    
 }
+
 .p3{
     font-size: 40px;
     color: white;
 }
-.n2{
-   word-spacing: 5px;
-}
+
  fieldset{
     background:#0a2640
  }
@@ -76,17 +88,46 @@ a{
     padding-right: 30px;
  }
  .h1{
-    background-color: #65E4A3;
+    background-color: #00ff7b;
     padding-left: 30px;
     padding-right: 30px;
+    border-color: transparent;
  }
  .d2{
     display: flex;
     gap: 50px;
+    
  }
  .LI{
-    border: 2px solid blue;
-    border-radius: 50px;
-    padding: 10px;
+    border: 1px solid #0a2640;
+    border-radius: 40px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding: 5px;
     text-decoration: none;
+ }
+ #Careers::after{
+    content: "hiring";
+    border: 1px solid transparent;
+    background: #01ff7c;
+    border-radius: 50px;
+ }
+ 
+ @media screen and (max-width:1000px) {
+   
+    .div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .div1{
+        display: flex;
+    }
+    .d1 p{
+        text-align: center;
+    }
+    .p2{
+        text-align: center;
+    }
+
  }
