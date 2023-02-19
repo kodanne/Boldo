@@ -1,133 +1,196 @@
-
-header, footer{
-    display: flex;
-    justify-content: space-between;
-}
-main{
-    max-width: 1000px;
-    margin: auto;
-}
-.div, .div2{ 
-    display: flex;
-    justify-content: space-between;
-}
-.d4{
-    text-align: center;
-}
-.d3{
-    text-align: center;
-}
- h4,h1{
-    text-align: center;
-    font-weight: 100; 
-}
-h1, h2{
-    font-size: 40px;
-}
-.img{
-    width: 40%;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.p1{
-    opacity: 0.5;
-   
-   
-}
-span{
-    color: #0a2640;
-    opacity: 0.9;
-    font-weight: 700;
-}
-.n1{
+header,
+footer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-    opacity: 0.8;
-}
-.h1{
-    border: 2px solid blue;
-    border-radius: 50px;
-    padding: 10px;
-    text-decoration: none;
-    
+    justify-content: space-around;
+
 }
 
-.h2{
-    width: 50%;
-    margin: auto;
-    border: 2px solid #0a2640;
-    border-radius: 50px;
-    padding: 10px;
-    text-decoration: none;
-    color: #0a2640;
-    text-align: center;
-}
-a{
+/*HEADER*/
+
+a {
     text-decoration: none;
     color: #0a2640;
     padding: 10px 10px;
 }
-.p2{
-    font-size: 30px;
-    
-}
 
-.p3{
-    font-size: 40px;
-    color: white;
-}
-
- fieldset{
-    background:#0a2640
- }
- input{
-    padding: 10px;
-    border-radius: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
- }
- .h1{
-    background-color: #00ff7b;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-color: transparent;
- }
- .d2{
-    display: flex;
-    gap: 50px;
-    
- }
- .LI{
+.LI {
     border: 1px solid #0a2640;
     border-radius: 40px;
     padding-left: 35px;
     padding-right: 50px;
     padding: 5px;
     text-decoration: none;
- }
- #Careers::after{
+}
+
+/*MAIN*/
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h4,
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.div2,
+.div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    width: 30%;
+}
+.d1{
+    height: 50%;
+}
+
+.p1 {
+    color: #0a2640;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.p1 span {
+    opacity: 0.5;
+    font-weight: 200;
+}
+
+.p2 {
+    font-size: 20px;
+}
+
+.img1 {
+    width: 70%;
+}
+
+.d3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.d3 a {
+    border: 1px solid #0a2640;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+fieldset {
+    background: #0a2640;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.d4 {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.p3 {
+    font-size: 40px;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+}
+
+
+.h1 {
+    border: 2px solid blue;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #65E4A3;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-color: transparent;
+}
+
+
+
+/*FOOTER*/
+footer p {
+    opacity: 0.5;
+    font-weight: 200;
+}
+
+.img2 {
+    width: 25%;
+}
+
+.d2 {
+    display: flex;
+    gap: 30px;
+}
+.d2 p{
+    opacity: 1;
+}
+
+.n1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+#Careers::after {
     content: "hiring";
     border: 1px solid transparent;
-    background: #01ff7c;
+    background: #65E4A3;
     border-radius: 50px;
- }
- 
- @media screen and (max-width:1000px) {
+    margin-left: 5px;
+    padding: 1px 5px;
+}
+
+@media screen and (max-width:1000px) {
+
+    header,
+    footer {
+        display: flex;
+        justify-content: space-between;
+
+    }
    
-    .div{
+    .div1 {
+        display: flex;
+    }
+    
+    .div {
         display: flex;
         flex-direction: column;
-        
-    }
-    .div1{
-        display: flex;
-    }
-    .d1 p{
-        text-align: center;
-    }
-    .p2{
-        text-align: center;
+
     }
 
- }
+    .d2 {
+        padding-right: 5px;
+    }
+
+   
+}
