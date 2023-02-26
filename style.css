@@ -1,5 +1,10 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1000px;
+    margin: auto;
+    
+
+
 }
 
 header,
@@ -14,23 +19,27 @@ footer {
 a {
     text-decoration: none;
     color: #0a2640;
-    padding: 10px 10px;
+    padding: 10px 5px;
 }
 
 .LI {
     border: 1px solid #0a2640;
     border-radius: 40px;
-    padding-left: 35px;
-    padding-right: 50px;
-    padding: 5px;
+    width: 50%;
+    margin: auto;
     text-decoration: none;
 }
 
 /*MAIN*/
-
-main {
+main{
     max-width: 1000px;
     margin: auto;
+}
+/*section1*/
+
+.s1 .p2 {
+    word-wrap: break-word;
+
 }
 
 h4,
@@ -39,22 +48,47 @@ h1 {
     font-weight: 100;
 }
 
-h1,
-h2 {
-    font-size: 30px;
-    font-weight: 100;
+.div2 {
+    display: flex;
+    justify-content: space-around;
+
 }
 
-.div2,
+.d1 {
+    height: 50%;
+    width: 50%;
+    float: right;
+}
+
+.img {
+    width: 30%;
+
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+hr {
+    width: 90%;
+}
+
+/*section2*/
+
+
+
 .div {
     display: flex;
     justify-content: space-around;
 }
 
-.img {
-    width: 30%;
+.h2 {
+    font-size: 30px;
+    font-weight: 100;
 }
-.d1{
+
+.d1 {
     height: 50%;
 }
 
@@ -93,12 +127,15 @@ h2 {
 
 }
 
+/*Fieldset*/
+
 fieldset {
     background: #0a2640;
     border: 0px;
     border-radius: 5px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 70px auto;
+    width: 90%;
+
 }
 
 .d4 {
@@ -107,16 +144,21 @@ fieldset {
 
 }
 
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .p3 {
     font-size: 40px;
     color: white;
 }
 
 input {
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 10px auto;
     border: 0px;
 }
 
@@ -146,9 +188,11 @@ footer p {
 
 .d2 {
     display: flex;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 18px;
 }
-.d2 p{
+
+.d2 p {
     opacity: 1;
 }
 
@@ -169,28 +213,57 @@ footer p {
     padding: 1px 5px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
+
+    body{
+        text-align: center;
+    }
 
     header,
     footer {
         display: flex;
         justify-content: space-between;
-
+        flex-direction: column;
+        text-align: center;
     }
+
+    header {
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LI {
+        width: 20%;
+        margin: auto;
+    }
+
    
+
     .div1 {
         display: flex;
+        flex-wrap: wrap;
+        text-align: center;
     }
-    
+
     .div {
         display: flex;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .d3 a {
+        border: 1px solid #0a2640;
+        border-radius: 50px;
+        margin: auto;
+        width: 20%;
+        font-weight: 700;
+        font-size: 15px;
 
     }
 
-    .d2 {
-        padding-right: 5px;
-    }
-
-   
 }
